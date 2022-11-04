@@ -33,7 +33,7 @@ for mes in lista_meses:
         message = client.messages.create(
             # LEMBRE-SE DE ALTERAR O NÚMERO DO DESTINATÁRIO
             to="+15558675309",
-            # LEMBRE-SE DE ALTERAR O NÚMERO DE PRIGEM DISPONÍVEL NA PLATAFORMA DO TWILIO
+            # LEMBRE-SE DE ALTERAR O NÚMERO DE ORIGEM DISPONÍVEL NA PLATAFORMA DO TWILIO
             from_="+15017250604",
             body=f'No mês de {mes} o vendedor {vendedor} bateu a meta de 55k e vendeu ${vendas:,.2f}.')
         print(message.sid)
